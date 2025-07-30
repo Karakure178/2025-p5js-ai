@@ -1,12 +1,3 @@
-const colors = [];
-const colorSelect = [
-  "#FF7A30",
-  "#465C88",
-  "#000000",
-  "#FF4757",
-  "#3742FA",
-  "#2ED573",
-];
 let numShapes = 12;
 let canvas;
 let rotationSpeeds = [];
@@ -17,10 +8,8 @@ function setup() {
   noStroke();
 
   for (let i = 0; i < numShapes; i++) {
-    colors.push([]);
     rotationSpeeds.push([]);
     for (let j = 0; j < numShapes; j++) {
-      colors[i].push(random(colorSelect));
       rotationSpeeds[i].push(random(0.005, 0.02));
     }
   }
@@ -155,9 +144,6 @@ const shader1 = {
 
    uniform sampler2D u_tex;
    uniform float u_time;
-
-   float pi = 3.14159265358979;
-
 
    void main() {
       vec2 uv = vTexCoord;

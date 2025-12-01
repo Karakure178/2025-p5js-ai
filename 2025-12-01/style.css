@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0f1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+canvas {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
